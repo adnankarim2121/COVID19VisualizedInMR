@@ -647,7 +647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeToDestroy: {fileID: 0}
-  particleSystem: {fileID: 5639539302726184217, guid: e34a5862c970ff642b0e19436387464e,
+  particleSystem: {fileID: 5513264348410272445, guid: b48f760d1c6bdd146b0f16c9454b5fe0,
     type: 3}
 --- !u!114 &1512983110
 MonoBehaviour:
