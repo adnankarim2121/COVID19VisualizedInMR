@@ -152,6 +152,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sphereOnFinger: {fileID: 6588689418307832962, guid: 2595c90da50962c47aaed3ec490770e2,
     type: 3}
+  particleSystem: {fileID: 5639539302726184217, guid: e34a5862c970ff642b0e19436387464e,
+    type: 3}
 --- !u!4 &247626607
 Transform:
   m_ObjectHideFlags: 0
@@ -333,7 +335,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 2.7017e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 3.9012e-41, z: 0, w: 16.75}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0

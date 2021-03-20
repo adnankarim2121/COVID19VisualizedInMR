@@ -13,6 +13,8 @@ public class HandTracking : MonoBehaviour
     public GameObject sphereOnFinger;
 
     GameObject thumbObject;
+    public GameObject particleSystem;
+    public int count = 0;
     GameObject indexFingerObject;
     GameObject middleFingerObject;
     GameObject ringFingerObject;
@@ -27,7 +29,8 @@ public class HandTracking : MonoBehaviour
         middleFingerObject = Instantiate(sphereOnFinger, this.transform);
         ringFingerObject = Instantiate(sphereOnFinger, this.transform);
         pinkyFingerObject = Instantiate(sphereOnFinger, this.transform);
-   
+        particleSystem = Instantiate(particleSystem, this.transform.position, Quaternion.identity);
+
 
     }
 
@@ -40,11 +43,15 @@ public class HandTracking : MonoBehaviour
         middleFingerObject.GetComponent<Renderer>().enabled = false;
         ringFingerObject.GetComponent<Renderer>().enabled = false;
         pinkyFingerObject.GetComponent<Renderer>().enabled = false;
+        particleSystem.GetComponent<Renderer>().enabled = false;
         //this is the HoloLens way to say, if we find the right hand finger tip, return its position (pose)
         if (HandJointUtils.TryGetJointPose(TrackedHandJoint.ThumbTip, Handedness.Right, out pose))
         {
+            count++;
             thumbObject.GetComponent<Renderer>().enabled = true;
             thumbObject.transform.position = pose.Position;
+            particleSystem.GetComponent<Renderer>().enabled = true;
+            particleSystem.transform.position = pose.Position;
 
         }
 
