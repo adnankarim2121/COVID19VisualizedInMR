@@ -58,6 +58,8 @@ public class UpdateInfectivityRateForWood : MonoBehaviour
         double answer = 0.16030 + 0.04018 * ((tempVal - 20.615) / 10.585) + 0.02176 * ((humidVal - 45.235))
             + 0.14369 * ((uv - 0.95) / 0.95) + 0.02636 * ((tempVal - 20.615) / 10.585) * ((uv - 0.95) / 0.95);
         textMeshPro.SetText(answer.ToString());
+        var sliderText = GameObject.Find("CurrentValueHumid").GetComponent<TextMesh>();
+        sliderText.text = humidVal.ToString();
     }
     private void formulaForInfectivityRate(SliderEventData temp, double humidity)
     {
@@ -66,6 +68,8 @@ public class UpdateInfectivityRateForWood : MonoBehaviour
         double answer = 0.16030 + 0.04018 * ((tempVal - 20.615) / 10.585) + 0.02176 * ((humidity - 45.235))
             + 0.14369 * ((uv - 0.95) / 0.95) + 0.02636 * ((tempVal - 20.615) / 10.585) * ((uv - 0.95) / 0.95);
         textMeshPro.SetText(answer.ToString());
+        var sliderText = GameObject.Find("CurrentValueTemp").GetComponent<TextMesh>();
+        sliderText.text = tempVal.ToString();
     }
 
 
