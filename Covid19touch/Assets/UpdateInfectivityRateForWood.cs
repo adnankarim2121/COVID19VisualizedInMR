@@ -29,7 +29,7 @@ public class UpdateInfectivityRateForWood : MonoBehaviour
     void Start()
     {
         //GetComponent<TextMesh>().text = "Adnan";
-        textForWood = GameObject.Find("InformationForWoodText");
+        textForWood = GameObject.Find("Annotation");
 
         description = textForWood.gameObject.transform.GetChild(1).gameObject;
         textMeshPro = description.GetComponent<TextMeshPro>();

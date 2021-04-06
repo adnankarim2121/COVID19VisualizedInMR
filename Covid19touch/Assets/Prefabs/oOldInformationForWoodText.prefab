@@ -1009,12 +1009,12 @@ PrefabInstance:
     - target: {fileID: 7307063430618434848, guid: 1093263a89abe47499cccf7dcb08effb,
         type: 3}
       propertyPath: sliderEndDistance
-      value: 0.12499992
+      value: 0.124999925
       objectReference: {fileID: 0}
     - target: {fileID: 7307063430618434848, guid: 1093263a89abe47499cccf7dcb08effb,
         type: 3}
       propertyPath: sliderStartDistance
-      value: -0.125
+      value: -0.12499999
       objectReference: {fileID: 0}
     - target: {fileID: 7307063430618434851, guid: 1093263a89abe47499cccf7dcb08effb,
         type: 3}
@@ -1884,7 +1884,7 @@ PrefabInstance:
     - target: {fileID: 8451469530216736246, guid: 478732197b53dee4694480aac1a7c98c,
         type: 3}
       propertyPath: m_Name
-      value: InformationForWoodText
+      value: oOldInformationForWoodText
       objectReference: {fileID: 0}
     - target: {fileID: 8781469162883619712, guid: 478732197b53dee4694480aac1a7c98c,
         type: 3}
