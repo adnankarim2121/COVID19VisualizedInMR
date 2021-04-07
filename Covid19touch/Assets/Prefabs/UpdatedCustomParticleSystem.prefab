@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5513264348410272445}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.75, y: -0.7261719, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &5513264348410272447
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -168,7 +168,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: -0.0001
+      scalar: 0.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -662,7 +662,7 @@ ParticleSystem:
     type: 10
     angle: 25
     length: 5
-    boxThickness: {x: 0, y: 0, z: 0}
+    boxThickness: {x: 1, y: 1, z: 1}
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
@@ -804,7 +804,7 @@ ParticleSystem:
           m_RotationOrder: 4
     arc:
       value: 360
-      mode: 0
+      mode: 2
       spread: 0
       speed:
         serializedVersion: 2
@@ -3612,7 +3612,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 3
     type: 0
     collisionMode: 0
@@ -3620,12 +3620,18 @@ ParticleSystem:
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
     multiplyColliderForceByCollisionAngle: 1
-    plane0: {fileID: 0}
-    plane1: {fileID: 0}
-    plane2: {fileID: 0}
-    plane3: {fileID: 0}
-    plane4: {fileID: 0}
-    plane5: {fileID: 0}
+    plane0: {fileID: 5736108068598343576, guid: 0ebfce2594e89aa43a879801a5d6eaf8,
+      type: 3}
+    plane1: {fileID: 3420469473386588977, guid: 8359c12f71dee17439eba6b463a8e48e,
+      type: 3}
+    plane2: {fileID: 7494336288625016790, guid: 14441ca2a41fc754b9e1ac3543755c20,
+      type: 3}
+    plane3: {fileID: 7034181246842796088, guid: 09da31cd825618e4a9f7390824e41217,
+      type: 3}
+    plane4: {fileID: 6685824034105656887, guid: e56a890c5c83f4b4981895d36b54c846,
+      type: 3}
+    plane5: {fileID: 6734156807699662436, guid: 217593bbdf3800549acf984f43dce9e7,
+      type: 3}
     m_Dampen:
       serializedVersion: 2
       minMaxState: 0

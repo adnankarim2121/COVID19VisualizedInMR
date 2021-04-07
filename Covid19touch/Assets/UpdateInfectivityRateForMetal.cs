@@ -10,7 +10,7 @@ using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit;
 using System;
 
-public class UpdateInfectivityRateForWood : MonoBehaviour
+public class UpdateInfectivityRateForMetal : MonoBehaviour
 {
     GameObject textForWood;
     public GameObject description;
@@ -29,16 +29,16 @@ public class UpdateInfectivityRateForWood : MonoBehaviour
     void Start()
     {
         //GetComponent<TextMesh>().text = "Adnan";
-        textForWood = GameObject.Find("InfoForWood");
+        textForWood = GameObject.Find("InfoForMetal");
 
         description = textForWood.gameObject.transform.GetChild(1).gameObject;
         textMeshPro = description.GetComponent<TextMeshPro>();
         textMeshPro.SetText("Change temperature and humidity value to calculate infectivity rate");
 
         tempButton = textForWood.gameObject.transform.GetChild(2).gameObject.transform.GetChild(1).gameObject;
-   
+
         var tempButtonToChange = tempButton.GetComponent<Interactable>();
-        tempButtonToChange.OnClick.AddListener(() => formulaForInfectivityRate(1.1,2.2));
+        tempButtonToChange.OnClick.AddListener(() => formulaForInfectivityRate(1.1, 2.2));
 
         //slider for temperature input
         sliderForTemp = GameObject.Find("WoodTempSlider");
@@ -103,8 +103,8 @@ public class UpdateInfectivityRateForWood : MonoBehaviour
     void formulaForInfectivityRate(double temp, double humidity)
     {
         double uv = 2;
-        double answer = 0.16030 + 0.04018*((temp - 20.615)/10.585) + 0.02176*((humidity - 45.235))
-            + 0.14369 * ((uv - 0.95)/ 0.95) + 0.02636*((temp - 20.615)/ 10.585)*((uv - 0.95)/ 0.95);
+        double answer = 0.16030 + 0.04018 * ((temp - 20.615) / 10.585) + 0.02176 * ((humidity - 45.235))
+            + 0.14369 * ((uv - 0.95) / 0.95) + 0.02636 * ((temp - 20.615) / 10.585) * ((uv - 0.95) / 0.95);
         textMeshPro.SetText(answer.ToString());
     }
 }
