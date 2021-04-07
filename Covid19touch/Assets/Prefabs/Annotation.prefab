@@ -536,6 +536,11 @@ PrefabInstance:
       propertyPath: m_textInfo.characterCount
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3677022320791072014, guid: 478732197b53dee4694480aac1a7c98c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3677022320791072016, guid: 478732197b53dee4694480aac1a7c98c,
         type: 3}
       propertyPath: InteractableOnClick
@@ -650,6 +655,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.characterCount
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514614719163644309, guid: 478732197b53dee4694480aac1a7c98c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5514614719784626203, guid: 478732197b53dee4694480aac1a7c98c,
         type: 3}
@@ -1089,7 +1099,7 @@ PrefabInstance:
     - target: {fileID: 8451469530216736246, guid: 478732197b53dee4694480aac1a7c98c,
         type: 3}
       propertyPath: m_Name
-      value: InformationForWoodText
+      value: Annotation
       objectReference: {fileID: 0}
     - target: {fileID: 8451469530216736246, guid: 478732197b53dee4694480aac1a7c98c,
         type: 3}
