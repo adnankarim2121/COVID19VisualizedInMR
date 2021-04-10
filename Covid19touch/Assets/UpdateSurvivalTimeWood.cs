@@ -16,28 +16,55 @@ public class UpdateSurvivalTimeWood : MonoBehaviour
     GameObject textForWood;
     public GameObject description;
     public UnityEvent OnButtonClicked;
-    public GameObject tempButton;
+    public GameObject fastForwardButton;
+    public GameObject currentTimeButton;
     public GameObject sliderForTemp;
     public GameObject sliderForHumid;
     public TextMeshPro textMeshPro;
+    private int count = 0;
+    public bool updateEveryFrame = true;
     // Start is called before the first frame update
     void Start()
     {
         //GetComponent<TextMesh>().text = "Adnan";
 
+
         textForWood = GameObject.Find("SurvivalInfoWood");
         description = textForWood.gameObject.transform.GetChild(1).gameObject;
-        tempButton = textForWood.gameObject.transform.GetChild(2).gameObject.transform.GetChild(1).gameObject;
 
-        var tempButtonToChange = tempButton.GetComponent<Interactable>();
+        //fast forward button
+        fastForwardButton = textForWood.gameObject.transform.GetChild(2).gameObject.transform.GetChild(1).gameObject;
+        var fastForwardChange = fastForwardButton.GetComponent<Interactable>();
+        fastForwardChange.OnClick.AddListener(() => updateContent());
+
+        //set to current time button
+        currentTimeButton = textForWood.gameObject.transform.GetChild(2).gameObject.transform.GetChild(2).gameObject;
+        var currentTimeChange = fastForwardButton.GetComponent<Interactable>();
+        currentTimeChange.OnClick.AddListener(() => resetToCurrentTime());
     }
 
     // Update is called once per frame
     void Update()
     {
-        textMeshPro = description.GetComponent<TextMeshPro>();
-        DateTime currentTime = DateTime.Now;
-        textMeshPro.SetText(currentTime.ToString());
+        if (updateEveryFrame)
+        {
+            textMeshPro = description.GetComponent<TextMeshPro>();
+            DateTime currentTime = DateTime.Now;
+            textMeshPro.SetText(currentTime.ToString());
+        }
+    }
 
+    void updateContent()
+    {
+        updateEveryFrame = false;
+        TextMeshPro localText = description.GetComponent<TextMeshPro>();
+        count++;
+
+        textMeshPro.SetText("clicked" + count.ToString());
+    }
+
+    void resetToCurrentTime()
+    {
+        updateEveryFrame = true;
     }
 }
