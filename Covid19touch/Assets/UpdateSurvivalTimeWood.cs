@@ -13,7 +13,7 @@ using System;
 
 public class UpdateSurvivalTimeWood : MonoBehaviour
 {
-    GameObject textForWood;
+    GameObject survivalInfoWood;
     public GameObject description;
     public UnityEvent OnButtonClicked;
     public GameObject fastForwardButton;
@@ -23,29 +23,36 @@ public class UpdateSurvivalTimeWood : MonoBehaviour
     public TextMeshPro textMeshPro;
     private int count = 0;
     public bool updateEveryFrame = true;
+    private bool contentRendered = false;
+    public ConfirmSizeOfWoodSurface sizeScriptWood;
     // Start is called before the first frame update
     void Start()
     {
         //GetComponent<TextMesh>().text = "Adnan";
-
-
-        textForWood = GameObject.Find("SurvivalInfoWood");
-        description = textForWood.gameObject.transform.GetChild(1).gameObject;
-
+        survivalInfoWood = GameObject.Find("SurvivalInfoWood");
+        description = survivalInfoWood.gameObject.transform.GetChild(1).gameObject;
         //fast forward button
-        fastForwardButton = textForWood.gameObject.transform.GetChild(2).gameObject.transform.GetChild(1).gameObject;
+        fastForwardButton = survivalInfoWood.gameObject.transform.GetChild(2).gameObject.transform.GetChild(1).gameObject;
         var fastForwardChange = fastForwardButton.GetComponent<Interactable>();
         fastForwardChange.OnClick.AddListener(() => updateContent());
 
         //set to current time button
-        currentTimeButton = textForWood.gameObject.transform.GetChild(2).gameObject.transform.GetChild(2).gameObject;
+        currentTimeButton = survivalInfoWood.gameObject.transform.GetChild(2).gameObject.transform.GetChild(2).gameObject;
         var currentTimeChange = fastForwardButton.GetComponent<Interactable>();
         currentTimeChange.OnClick.AddListener(() => resetToCurrentTime());
+        //survivalInfoWood.SetActive(false);
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (sizeScriptWood.confirmWoodSurfaceSize)
+        {
+            //survivalInfoWood.SetActive(true);
+            sizeScriptWood.confirmWoodSurfaceSize = false;
+        }
         if (updateEveryFrame)
         {
             textMeshPro = description.GetComponent<TextMeshPro>();
@@ -54,12 +61,25 @@ public class UpdateSurvivalTimeWood : MonoBehaviour
         }
     }
 
+    void changeColour()
+    {
+
+    }
+
+    void renderContent()
+    {
+
+        contentRendered = true;
+    }
+
     void updateContent()
     {
         updateEveryFrame = false;
         TextMeshPro localText = description.GetComponent<TextMeshPro>();
         count++;
-
+        var cubeRenderer = GameObject.Find("CubeForWood").GetComponent<Renderer>();
+        Shader newShader = Shader.Find("Safe");
+        cubeRenderer.material.shader = newShader;
         textMeshPro.SetText("clicked" + count.ToString());
     }
 
