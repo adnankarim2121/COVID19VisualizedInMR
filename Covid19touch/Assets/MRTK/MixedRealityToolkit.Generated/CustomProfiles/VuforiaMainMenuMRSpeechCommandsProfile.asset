@@ -107,3 +107,24 @@ MonoBehaviour:
       id: 0
       description: Navigation Action
       axisConstraint: 0
+  - localizationKey: 
+    keyword: Wood
+    keyCode: 119
+    action:
+      id: 0
+      description: Navigation Action
+      axisConstraint: 0
+  - localizationKey: 
+    keyword: Metal
+    keyCode: 109
+    action:
+      id: 0
+      description: Navigation Action
+      axisConstraint: 0
+  - localizationKey: 
+    keyword: Plastic
+    keyCode: 112
+    action:
+      id: 0
+      description: Navigation Action
+      axisConstraint: 0
