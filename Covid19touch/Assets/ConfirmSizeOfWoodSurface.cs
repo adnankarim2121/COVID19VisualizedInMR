@@ -22,7 +22,7 @@ public class ConfirmSizeOfWoodSurface : MonoBehaviour
     {
         confirmButton = GameObject.Find("ConfirmationButtonWood");
         eventClick = confirmButton.GetComponent<Interactable>();
-        eventClick.OnClick.AddListener(() => updateContent());
+        eventClick.OnClick.AddListener(() => updateContentButton());
 
     }
 
@@ -32,7 +32,7 @@ public class ConfirmSizeOfWoodSurface : MonoBehaviour
         
     }
 
-    void updateContent()
+    void updateContentButton()
     {
         confirmWoodSurfaceSize = true;
         confirmButton.SetActive(false);

@@ -31,6 +31,7 @@ public class UpdateSurvivalTimeWood : MonoBehaviour
         //GetComponent<TextMesh>().text = "Adnan";
         survivalInfoWood = GameObject.Find("SurvivalInfoWood");
         description = survivalInfoWood.gameObject.transform.GetChild(1).gameObject;
+        textMeshPro = description.GetComponent<TextMeshPro>();
         //fast forward button
         fastForwardButton = survivalInfoWood.gameObject.transform.GetChild(2).gameObject.transform.GetChild(1).gameObject;
         var fastForwardChange = fastForwardButton.GetComponent<Interactable>();
@@ -51,13 +52,14 @@ public class UpdateSurvivalTimeWood : MonoBehaviour
         if (sizeScriptWood.confirmWoodSurfaceSize)
         {
             //survivalInfoWood.SetActive(true);
+            //ensure button is clicked only once
             sizeScriptWood.confirmWoodSurfaceSize = false;
         }
         if (updateEveryFrame)
         {
-            textMeshPro = description.GetComponent<TextMeshPro>();
-            DateTime currentTime = DateTime.Now;
-            textMeshPro.SetText(currentTime.ToString());
+            
+           
+            textMeshPro.SetText(DateTime.Now.ToString());
         }
     }
 
