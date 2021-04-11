@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -180,7 +180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1217567640
 Transform:
   m_ObjectHideFlags: 0
@@ -326,12 +326,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadSceneMode: 0
   contentScene:
-    Name: 1-Menu
-    Path: Assets/SampleResources/Scenes/1-Menu.unity
+    Name: SurfaceSelectorScene
+    Path: Assets/SampleResources/Scenes/SurfaceSelectorScene.unity
     Included: 1
-    BuildIndex: 1
+    BuildIndex: 3
     Tag: Untagged
-    Asset: {fileID: 102900000, guid: 72a81fd0bdedaf0448e6c17d1e8fcb86, type: 3}
+    Asset: {fileID: 102900000, guid: d9b53b25a285640cf8ac170a80603e34, type: 3}
   loadOnStartup: 1
 --- !u!4 &1924954233
 Transform:

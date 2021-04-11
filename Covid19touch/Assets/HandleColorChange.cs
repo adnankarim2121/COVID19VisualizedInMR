@@ -18,7 +18,7 @@ public class HandleColorChange : MonoBehaviour
     }
 
     // ########Function BELOW IS FOR PLASTIC WHERE THE HALF-LIFE=6.81, HOURS=72, RH=65% AND TEMP=21-23 DEGREES CELSIUS########
-    double calculateSurvivalRatePlastic()
+    public double calculateSurvivalRatePlastic()
     {
         double t_hrs = 6.81; // This value is given in the half-life columnn t_hrs=T
         double tau_val; // tau_val=τ
@@ -41,7 +41,7 @@ public class HandleColorChange : MonoBehaviour
         return final_val;
     }
 
-    double calculateSurvivalRateSteel()
+    public double calculateSurvivalRateSteel()
     {
         //##########EQUATION BELOW IS FOR STAINLESS STEEL WHERE HALF-LIFE=5.63, HOURS=72, RH=65% AND TEMP=21-23 DEGREES CELSIUS##########
 
@@ -65,7 +65,7 @@ public class HandleColorChange : MonoBehaviour
         return final_val;
     }
 
-    double calculateSurvivalRateWood()
+    public double calculateSurvivalRateWood()
     {
         //###########EQUATION BELOW IS FOR WOOD WHERE HALF-LIFE=21.41, HOURS=168, RH=35% AND TEMP=25-27 DEGREES CELSIUS######
 

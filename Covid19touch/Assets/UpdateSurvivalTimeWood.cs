@@ -83,6 +83,7 @@ public class UpdateSurvivalTimeWood : MonoBehaviour
         Shader newShader = Shader.Find("Safe");
         cubeRenderer.material.shader = newShader;
         textMeshPro.SetText("clicked" + count.ToString());
+        GameObject.Find("SurfaceButtonManager").SetActive(true);
     }
 
     void resetToCurrentTime()

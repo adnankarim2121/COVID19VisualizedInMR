@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 590182917}
   - component: {fileID: 590182916}
   m_Layer: 0
-  m_Name: MixedRealityToolkit (Inactive)
+  m_Name: MixedRealityToolkit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1654,12 +1654,12 @@ PrefabInstance:
     - target: {fileID: 5097940729902446830, guid: 97e77b91a85a1c844aee31efd81859a2,
         type: 3}
       propertyPath: contentScene.Name
-      value: 2-ImageTargets
+      value: 2-WoodIImageTargets
       objectReference: {fileID: 0}
     - target: {fileID: 5097940729902446830, guid: 97e77b91a85a1c844aee31efd81859a2,
         type: 3}
       propertyPath: contentScene.Path
-      value: Assets/SampleResources/Scenes/2-ImageTargets.unity
+      value: Assets/SampleResources/Scenes/2-WoodIImageTargets.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5097940729902446830, guid: 97e77b91a85a1c844aee31efd81859a2,
         type: 3}
