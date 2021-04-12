@@ -9055,7 +9055,7 @@ GameObject:
   - component: {fileID: 1626938606}
   - component: {fileID: 1626938605}
   m_Layer: 0
-  m_Name: MixedRealityToolkit
+  m_Name: MixedRealityToolkit (Inactive)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10003,12 +10003,12 @@ PrefabInstance:
     - target: {fileID: 478563603873792172, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
       propertyPath: m_text
-      value: Select Your Conditions for Plastic (More to Come!)
+      value: "Select one of the room conditions below: \n(More to Come!)"
       objectReference: {fileID: 0}
     - target: {fileID: 694249856954500341, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
       propertyPath: m_text
-      value: 
+      value: Plastic Conditions
       objectReference: {fileID: 0}
     - target: {fileID: 1335812942479318450, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
@@ -10039,6 +10039,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: "Temperature: 21-23 \xB0C\nRelative Humidity: 65 %"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759836700734850094, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759836700734850094, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759836700734850094, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1759836700734850131, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
@@ -10145,10 +10160,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodConditionsButtonManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3461769404974520560, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4110514754616672868, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557847549817129303, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557847549817129303, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 4781816137580450643, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
@@ -10199,6 +10229,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7181161162009954664, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7181161162009954664, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7181161162009954664, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7181161162009954664, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 7488503941580130215, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}

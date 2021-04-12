@@ -3363,6 +3363,21 @@ PrefabInstance:
       propertyPath: m_textInfo.characterCount
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3126786009469193215, guid: 4f44c0d070528944c9bff425c6932763,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126786009469193215, guid: 4f44c0d070528944c9bff425c6932763,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126786009469193215, guid: 4f44c0d070528944c9bff425c6932763,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3126786010441234080, guid: 4f44c0d070528944c9bff425c6932763,
         type: 3}
       propertyPath: m_IsActive
@@ -9010,7 +9025,7 @@ GameObject:
   - component: {fileID: 1626938606}
   - component: {fileID: 1626938605}
   m_Layer: 0
-  m_Name: MixedRealityToolkit
+  m_Name: MixedRealityToolkit (Inactive)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9953,12 +9968,13 @@ PrefabInstance:
     - target: {fileID: 478563603873792172, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
       propertyPath: m_text
-      value: Select Your Surface
+      value: "Walk to a particular surface in your\nenvironment, and then click one
+        of \nthe following options below:"
       objectReference: {fileID: 0}
     - target: {fileID: 694249856954500341, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
       propertyPath: m_text
-      value: 
+      value: Select Your Surface
       objectReference: {fileID: 0}
     - target: {fileID: 1335812942479318450, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
@@ -9989,6 +10005,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759836700734850094, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759836700734850094, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759836700734850094, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1759836700734850131, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
@@ -10095,6 +10126,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SurfaceButtonManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3461769404974520560, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4110514754616672868, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
       propertyPath: m_Mesh
@@ -10142,12 +10178,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7148371441659702974, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7148371441659702974, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7148371441659702974, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7148371441659702974, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7148371441659702974, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7148371441659702974, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7181161162009954664, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7181161162009954664, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7181161162009954664, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7181161162009954664, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7332361667014768852, guid: 6ed2066531aba844792ba59740da39bb,
@@ -10204,6 +10280,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WoodButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488503942720229557, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488503942720229557, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488503942720229557, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7488503942720229558, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}

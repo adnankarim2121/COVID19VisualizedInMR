@@ -450,7 +450,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1138187021}
+    m_TransformParent: {fileID: 1914997004}
     m_Modifications:
     - target: {fileID: 1078241679539432, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_IsActive
@@ -458,7 +458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1210820392543280, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_Name
-      value: ConfirmationButtonWood
+      value: ConfirmationButtonMetal
       objectReference: {fileID: 0}
     - target: {fileID: 4249060311757736, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_RootOrder
@@ -494,15 +494,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4249060311757736, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4249060311757736, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4249060311757736, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4249060311757736, guid: 80cec532ae7b6c1429d0f5494e7dbd8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1065,7 +1065,7 @@ PrefabInstance:
     - target: {fileID: 8653284424773236103, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8653284424773236103, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
         type: 3}
@@ -1295,7 +1295,7 @@ PrefabInstance:
     - target: {fileID: 5513264348410272446, guid: b48f760d1c6bdd146b0f16c9454b5fe0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5513264348410272446, guid: b48f760d1c6bdd146b0f16c9454b5fe0,
         type: 3}
@@ -1450,7 +1450,7 @@ PrefabInstance:
     - target: {fileID: 4327343932389748087, guid: 0b0620783b0247d41bdd37fc0e91e562,
         type: 3}
       propertyPath: m_Name
-      value: Cube
+      value: CubeForMetal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b0620783b0247d41bdd37fc0e91e562, type: 3}
@@ -1460,6 +1460,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 709447759}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &709447761 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4327343932389748087, guid: 0b0620783b0247d41bdd37fc0e91e562,
+    type: 3}
+  m_PrefabInstance: {fileID: 709447759}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &709447762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709447761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3049b02d3261eeb428df6d4200505c2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTimeButton: {fileID: 0}
+  confirmMetalSurfaceSize: 0
+  description: {fileID: 0}
+  textMeshPro: {fileID: 0}
+  textMeshProSR: {fileID: 0}
+  tempVal: 25
+  humidVal: 35
+  survivalRateInformation: {fileID: 0}
+  descriptionSR: {fileID: 0}
+  OnButtonClicked:
+    m_PersistentCalls:
+      m_Calls: []
+  fastForwardButton: {fileID: 0}
+  updateEveryFrame: 1
 --- !u!1 &777544875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,6 +1650,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522cd3d037ed832408d9ddd672f96f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!21 &826115765
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'AstronautMaterial
+
+    169820'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 9acbce508a2246108d4c0212523d1e6b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1001 &835640274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7120,7 +7180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c6045ffd0db911d418ecf014e1fbd650, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c6045ffd0db911d418ecf014e1fbd650, type: 3}
       propertyPath: m_LocalScale.x
@@ -7294,7 +7354,7 @@ PrefabInstance:
     - target: {fileID: 5513264348410272446, guid: b48f760d1c6bdd146b0f16c9454b5fe0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5513264348410272446, guid: b48f760d1c6bdd146b0f16c9454b5fe0,
         type: 3}
@@ -7530,6 +7590,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTimeButton: {fileID: 0}
   confirmWoodSurfaceSize: 0
+  description: {fileID: 0}
+  textMeshPro: {fileID: 0}
+  textMeshProSR: {fileID: 0}
+  tempVal: 25
+  humidVal: 35
+  survivalRateInformation: {fileID: 0}
+  descriptionSR: {fileID: 0}
+  OnButtonClicked:
+    m_PersistentCalls:
+      m_Calls: []
+  fastForwardButton: {fileID: 0}
+  updateEveryFrame: 1
 --- !u!114 &1111933972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7781,11 +7853,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1111933969}
-  - {fileID: 1531572168}
   - {fileID: 980915941}
   - {fileID: 651499081}
   - {fileID: 532494477}
-  - {fileID: 134334879}
   m_Father: {fileID: 930027774}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7976,7 +8046,7 @@ GameObject:
   - component: {fileID: 1214768550}
   - component: {fileID: 1214768549}
   m_Layer: 0
-  m_Name: MixedRealityToolkit
+  m_Name: MixedRealityToolkit (Inactive)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8523,7 +8593,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1138187021}
+    m_TransformParent: {fileID: 1914997004}
     m_Modifications:
     - target: {fileID: 49779459524117382, guid: a0ef6c45c87675f4abf9738395165413,
         type: 3}
@@ -8538,7 +8608,7 @@ PrefabInstance:
     - target: {fileID: 1231799312788918984, guid: a0ef6c45c87675f4abf9738395165413,
         type: 3}
       propertyPath: m_Name
-      value: SurvivalInfoWood
+      value: SurvivalInfoMetal
       objectReference: {fileID: 0}
     - target: {fileID: 1231799312788918987, guid: a0ef6c45c87675f4abf9738395165413,
         type: 3}
@@ -8548,7 +8618,7 @@ PrefabInstance:
     - target: {fileID: 1231799312788918987, guid: a0ef6c45c87675f4abf9738395165413,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1231799312788918987, guid: a0ef6c45c87675f4abf9738395165413,
         type: 3}
@@ -8568,7 +8638,7 @@ PrefabInstance:
     - target: {fileID: 1231799312788918987, guid: a0ef6c45c87675f4abf9738395165413,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1231799312788918987, guid: a0ef6c45c87675f4abf9738395165413,
         type: 3}
@@ -8578,7 +8648,7 @@ PrefabInstance:
     - target: {fileID: 1231799312788918987, guid: a0ef6c45c87675f4abf9738395165413,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1231799312788918987, guid: a0ef6c45c87675f4abf9738395165413,
         type: 3}
@@ -8668,7 +8738,7 @@ PrefabInstance:
     - target: {fileID: 4114054031443894147, guid: a0ef6c45c87675f4abf9738395165413,
         type: 3}
       propertyPath: m_text
-      value: Survival Rate for Wood
+      value: Survival Rate for Metal
       objectReference: {fileID: 0}
     - target: {fileID: 4114054031443894147, guid: a0ef6c45c87675f4abf9738395165413,
         type: 3}
@@ -8796,7 +8866,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531572169}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee4260f138a66934ababfe1f94abb936, type: 3}
   m_Name: 
@@ -8830,7 +8900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c73e05182b7e39c46b3f7c7b76ab1d26, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c73e05182b7e39c46b3f7c7b76ab1d26, type: 3}
       propertyPath: m_LocalScale.x
@@ -9079,13 +9149,13 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1721766443}
   m_PrefabAsset: {fileID: 0}
---- !u!43 &1742197698
+--- !u!43 &1797380163
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh202240
+  m_Name: ImageTargetMesh148458
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9242,34 +9312,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!21 &1868940106
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'AstronautMaterial
-
-    202250'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 9acbce508a2246108d4c0212523d1e6b, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1001 &1913382398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9277,6 +9319,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1914997004}
     m_Modifications:
+    - target: {fileID: 894379991690347006, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 894379992022932278, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2011002491767025513, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
         type: 3}
       propertyPath: m_Mesh
@@ -9315,7 +9367,7 @@ PrefabInstance:
     - target: {fileID: 8653284424773236103, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8653284424773236103, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
         type: 3}
@@ -9335,12 +9387,12 @@ PrefabInstance:
     - target: {fileID: 8653284424773236103, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8653284424773236103, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8653284424773236103, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
         type: 3}
@@ -9350,7 +9402,7 @@ PrefabInstance:
     - target: {fileID: 8653284424773236103, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.953717
       objectReference: {fileID: 0}
     - target: {fileID: 8653284424773236103, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
         type: 3}
@@ -9360,7 +9412,7 @@ PrefabInstance:
     - target: {fileID: 8653284424773236103, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.30070576
       objectReference: {fileID: 0}
     - target: {fileID: 8653284424773236103, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
         type: 3}
@@ -9375,7 +9427,7 @@ PrefabInstance:
     - target: {fileID: 8653284424773236103, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 8653284424773236103, guid: 05e603a3f62f6c642adb0f4cdaf7d22b,
         type: 3}
@@ -9404,7 +9456,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913382400}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 741a80f5100f10a4bbc55da9a984794c, type: 3}
   m_Name: 
@@ -9439,7 +9491,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1914996998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9460,7 +9512,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914996997}
-  m_Mesh: {fileID: 1742197698}
+  m_Mesh: {fileID: 1797380163}
 --- !u!23 &1914997000
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9468,7 +9520,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914996997}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -9479,7 +9531,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1868940106}
+  - {fileID: 826115765}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9573,9 +9625,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 709447760}
+  - {fileID: 1531572168}
   - {fileID: 1564554086}
   - {fileID: 1913382399}
   - {fileID: 1047773213}
+  - {fileID: 134334879}
   m_Father: {fileID: 930027774}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10161,6 +10215,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8236524565559887894, guid: 3909c6d686ac4d24390b78279fa54fea,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8236524565694684244, guid: 3909c6d686ac4d24390b78279fa54fea,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -10185,6 +10244,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8236524565711008905, guid: 3909c6d686ac4d24390b78279fa54fea,
+        type: 3}
+      propertyPath: m_Text
+      value: "1. Begin by placing your printed image target on  the surface you selected.
+        \n\u2022 The Astronaut image target is used to represent COVID-19 information
+        related to wood.\n\u2022 The Drone image target is used to represent COVID-19
+        information related to plastic.\n\u2022 The Oxygen image target is used to
+        represent COVID-19 information related to metal.\n2. Once placed, look at
+        the image target with your HoloLens 2. You should see multiple objects appear.\n3.
+        Remove the printed image target.\n4. Scale the red cube to the size of your
+        surface as accurately as possible, then click the <b> confirm </b>button.\n5.
+        The left panel informs you about the survival rate and tells you when the
+        surface will be safe to touch. By clicking the <b> Fast Forward to End of
+        Survival Time </b> button, you can see what the surface will look like <b>
+        once it is safe to touch </b>.\n6. The right panel informs you about the
+        infectivity rate. The <b> Set to Current Time </b> changes the cube's color
+        to the corresponding state of the surface.\n7. To change to a different surface,
+        say \"Home\" or click the \"Home\" button.\n\n\t\t\t\t\t\t\t<size=20>Image
+        Targets</size>\n"
       objectReference: {fileID: 0}
     - target: {fileID: 8236524565711008908, guid: 3909c6d686ac4d24390b78279fa54fea,
         type: 3}
@@ -10216,6 +10295,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8236524565777767572, guid: 3909c6d686ac4d24390b78279fa54fea,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8236524565777767575, guid: 3909c6d686ac4d24390b78279fa54fea,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -10264,6 +10348,11 @@ PrefabInstance:
     - target: {fileID: 8236524565937204894, guid: 3909c6d686ac4d24390b78279fa54fea,
         type: 3}
       propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8236524565937204895, guid: 3909c6d686ac4d24390b78279fa54fea,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8236524566746490765, guid: 3909c6d686ac4d24390b78279fa54fea,
@@ -10319,7 +10408,7 @@ PrefabInstance:
     - target: {fileID: 8236524567149349727, guid: 3909c6d686ac4d24390b78279fa54fea,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8236524567149349727, guid: 3909c6d686ac4d24390b78279fa54fea,
         type: 3}
@@ -10416,6 +10505,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8236524567338355801, guid: 3909c6d686ac4d24390b78279fa54fea,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a1313750ed0a8f54dbc67b5c867b092a,
+        type: 3}
     - target: {fileID: 8236524567338355807, guid: 3909c6d686ac4d24390b78279fa54fea,
         type: 3}
       propertyPath: m_AnchorMax.y

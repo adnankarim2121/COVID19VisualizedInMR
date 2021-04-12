@@ -121,6 +121,34 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!21 &13493331
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'AstronautMaterial
+
+    170298'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 9acbce508a2246108d4c0212523d1e6b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1001 &17396799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -632,7 +660,6 @@ GameObject:
   - component: {fileID: 213762606}
   - component: {fileID: 213762605}
   - component: {fileID: 213762603}
-  - component: {fileID: 213762604}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -673,29 +700,6 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
---- !u!114 &213762604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213762601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf98dd1206224111a38765365e98e207, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lockCursorWhenFocusLocked: 1
-  setCursorInvisibleWhenFocusLocked: 0
-  maxGazeCollisionDistance: 10
-  raycastLayerMasks:
-  - serializedVersion: 2
-    m_Bits: 4294967291
-  stabilizer:
-    storedStabilitySamples: 60
-  gazeTransform: {fileID: 0}
-  minHeadVelocityThreshold: 0.5
-  maxHeadVelocityThreshold: 2
 --- !u!114 &213762605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1532,6 +1536,31 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8236524565559887894, guid: 3909c6d686ac4d24390b78279fa54fea,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8236524565711008905, guid: 3909c6d686ac4d24390b78279fa54fea,
+        type: 3}
+      propertyPath: m_Text
+      value: "1. Begin by placing your printed image target on  the surface you selected.
+        \n\u2022 The Astronaut image target is used to represent COVID-19 information
+        related to wood.\n\u2022 The Drone image target is used to represent COVID-19
+        information related to plastic.\n\u2022 The Oxygen image target is used to
+        represent COVID-19 information related to metal.\n2. Once placed, look at
+        the image target with your HoloLens 2. You should see multiple objects appear.\n3.
+        Remove the printed image target.\n4. Scale the red cube to the size of your
+        surface as accurately as possible, then click the <b> confirm </b>button.\n5.
+        The left panel informs you about the survival rate and tells you when the
+        surface will be safe to touch. By clicking the <b> Fast Forward to End of
+        Survival Time </b> button, you can see what the surface will look like <b>
+        once it is safe to touch </b>.\n6. The right panel informs you about the
+        infectivity rate. The <b> Set to Current Time </b> changes the cube's color
+        to the corresponding state of the surface.\n7. To change to a different surface,
+        say \"Home\" or click the \"Home\" button.\n\n\t\t\t\t\t\t\t<size=20>Image
+        Targets</size>\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 8236524565711008908, guid: 3909c6d686ac4d24390b78279fa54fea,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1562,6 +1591,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8236524565777767572, guid: 3909c6d686ac4d24390b78279fa54fea,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8236524565777767575, guid: 3909c6d686ac4d24390b78279fa54fea,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1610,6 +1644,11 @@ PrefabInstance:
     - target: {fileID: 8236524565937204894, guid: 3909c6d686ac4d24390b78279fa54fea,
         type: 3}
       propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8236524565937204895, guid: 3909c6d686ac4d24390b78279fa54fea,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8236524566746490765, guid: 3909c6d686ac4d24390b78279fa54fea,
@@ -1665,7 +1704,7 @@ PrefabInstance:
     - target: {fileID: 8236524567149349727, guid: 3909c6d686ac4d24390b78279fa54fea,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8236524567149349727, guid: 3909c6d686ac4d24390b78279fa54fea,
         type: 3}
@@ -1762,6 +1801,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8236524567338355801, guid: 3909c6d686ac4d24390b78279fa54fea,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a1313750ed0a8f54dbc67b5c867b092a,
+        type: 3}
     - target: {fileID: 8236524567338355807, guid: 3909c6d686ac4d24390b78279fa54fea,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -7539,6 +7584,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTimeButton: {fileID: 0}
   confirmWoodSurfaceSize: 0
+  description: {fileID: 0}
+  textMeshPro: {fileID: 0}
+  textMeshProSR: {fileID: 0}
+  tempVal: 25
+  humidVal: 35
+  survivalRateInformation: {fileID: 0}
+  descriptionSR: {fileID: 0}
+  OnButtonClicked:
+    m_PersistentCalls:
+      m_Calls: []
+  fastForwardButton: {fileID: 0}
+  updateEveryFrame: 1
 --- !u!114 &1111933972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7696,7 +7753,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1676251550}
+  - {fileID: 13493331}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8592,34 +8649,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1564554085}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1676251550
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'AstronautMaterial
-
-    576570'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 9acbce508a2246108d4c0212523d1e6b, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!114 &1717619421
 MonoBehaviour:
   m_ObjectHideFlags: 0
