@@ -2950,6 +2950,75 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!1001 &1264140437
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1910832787}
+    m_Modifications:
+    - target: {fileID: 3431900315594696276, guid: 1e00be27600bb254f91617ebbac80ae7,
+        type: 3}
+      propertyPath: m_Name
+      value: BackButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1e00be27600bb254f91617ebbac80ae7, type: 3}
 --- !u!1 &1284436348
 GameObject:
   m_ObjectHideFlags: 0
@@ -3711,75 +3780,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404012986}
   m_CullTransparentMesh: 0
---- !u!1001 &1433408602
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1910832787}
-    m_Modifications:
-    - target: {fileID: 3431900315594696276, guid: 1e00be27600bb254f91617ebbac80ae7,
-        type: 3}
-      propertyPath: m_Name
-      value: BackButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3435079264006975948, guid: 1e00be27600bb254f91617ebbac80ae7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1e00be27600bb254f91617ebbac80ae7, type: 3}
 --- !u!1 &1473012438
 GameObject:
   m_ObjectHideFlags: 0
@@ -10003,7 +10003,7 @@ PrefabInstance:
     - target: {fileID: 478563603873792172, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
       propertyPath: m_text
-      value: Select Your Conditions for Wood (More to Come!)
+      value: Select Your Conditions for Plastic (More to Come!)
       objectReference: {fileID: 0}
     - target: {fileID: 694249856954500341, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
@@ -10038,7 +10038,7 @@ PrefabInstance:
     - target: {fileID: 1759836700734850093, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
       propertyPath: m_text
-      value: "Temperature: 25-27 \xB0C\nRelative Humidity: 35 %"
+      value: "Temperature: 21-23 \xB0C\nRelative Humidity: 65 %"
       objectReference: {fileID: 0}
     - target: {fileID: 1759836700734850131, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
@@ -10304,12 +10304,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadSceneMode: 0
   contentScene:
-    Name: 2-WoodIImageTargets
-    Path: Assets/SampleResources/Scenes/2-WoodIImageTargets.unity
+    Name: 2-PlasticImageTargets
+    Path: Assets/SampleResources/Scenes/2-PlasticImageTargets.unity
     Included: 1
-    BuildIndex: 2
+    BuildIndex: 6
     Tag: Untagged
-    Asset: {fileID: 102900000, guid: 03ddc4184641b534487cecd6dab620df, type: 3}
+    Asset: {fileID: 102900000, guid: 40f5b08772efca94fac35187c3e19e97, type: 3}
   loadOnStartup: 0
 --- !u!1 &1985476537
 GameObject:

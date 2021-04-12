@@ -3258,6 +3258,36 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2975148661001560990, guid: 4f44c0d070528944c9bff425c6932763,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975148661001560990, guid: 4f44c0d070528944c9bff425c6932763,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975148661001560990, guid: 4f44c0d070528944c9bff425c6932763,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1335108655}
+    - target: {fileID: 2975148661001560990, guid: 4f44c0d070528944c9bff425c6932763,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975148661001560990, guid: 4f44c0d070528944c9bff425c6932763,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadContent
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975148661001560990, guid: 4f44c0d070528944c9bff425c6932763,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3126786008848669196, guid: 4f44c0d070528944c9bff425c6932763,
         type: 3}
       propertyPath: m_Name
@@ -3517,6 +3547,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: {fileID: 1335108652}
   ButtonTypeEnum: 0
+--- !u!114 &1335108655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335108653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae67cd8a02f7ce94e9565614536df803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadSceneMode: 0
+  contentScene:
+    Name: PlasticlTempAndHumidSelector
+    Path: Assets/SampleResources/Scenes/PlasticlTempAndHumidSelector.unity
+    Included: 1
+    BuildIndex: 9
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: 5eb087914fc08fb45809f10abb2d3071, type: 3}
+  loadOnStartup: 0
 --- !u!1 &1344614599
 GameObject:
   m_ObjectHideFlags: 0
@@ -9949,6 +10000,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1891925918374931535, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891925918374931535, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891925918374931535, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1910832791}
+    - target: {fileID: 1891925918374931535, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891925918374931535, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadContent
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891925918374931535, guid: 6ed2066531aba844792ba59740da39bb,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2089176760249755910, guid: 6ed2066531aba844792ba59740da39bb,
         type: 3}
       propertyPath: m_IsActive
@@ -10197,6 +10278,33 @@ MonoBehaviour:
     BuildIndex: 5
     Tag: Untagged
     Asset: {fileID: 102900000, guid: 348c2e5d8ae10b54f914b9531a4f2b6e, type: 3}
+  loadOnStartup: 0
+--- !u!1 &1910832790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1759836701321827805, guid: 6ed2066531aba844792ba59740da39bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1910832784}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1910832791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910832790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae67cd8a02f7ce94e9565614536df803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadSceneMode: 0
+  contentScene:
+    Name: MetalTempAndHumidSelector
+    Path: Assets/SampleResources/Scenes/MetalTempAndHumidSelector.unity
+    Included: 1
+    BuildIndex: 8
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: 8992913b4076f6a4db50c9e095f67331, type: 3}
   loadOnStartup: 0
 --- !u!1 &1985476537
 GameObject:

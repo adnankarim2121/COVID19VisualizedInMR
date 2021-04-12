@@ -61,6 +61,30 @@ MonoBehaviour:
     BuildIndex: 5
     Tag: Untagged
     Asset: {fileID: 102900000, guid: 348c2e5d8ae10b54f914b9531a4f2b6e, type: 3}
+  - Name: 2-SteelImageTargets
+    Path: Assets/SampleResources/Scenes/2-SteelImageTargets.unity
+    Included: 1
+    BuildIndex: 7
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: 65180c9ae007c07459ecf25a65111413, type: 3}
+  - Name: 2-PlasticImageTargets
+    Path: Assets/SampleResources/Scenes/2-PlasticImageTargets.unity
+    Included: 1
+    BuildIndex: 6
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: 40f5b08772efca94fac35187c3e19e97, type: 3}
+  - Name: PlasticlTempAndHumidSelector
+    Path: Assets/SampleResources/Scenes/PlasticlTempAndHumidSelector.unity
+    Included: 1
+    BuildIndex: 9
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: 5eb087914fc08fb45809f10abb2d3071, type: 3}
+  - Name: MetalTempAndHumidSelector
+    Path: Assets/SampleResources/Scenes/MetalTempAndHumidSelector.unity
+    Included: 1
+    BuildIndex: 8
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: 8992913b4076f6a4db50c9e095f67331, type: 3}
   permittedLightingSceneComponentTypes:
   - reference: UnityEngine.Transform, UnityEngine.CoreModule
   - reference: UnityEngine.GameObject, UnityEngine.CoreModule

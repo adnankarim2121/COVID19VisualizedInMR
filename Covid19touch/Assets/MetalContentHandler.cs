@@ -11,7 +11,7 @@ using Microsoft.MixedReality.Toolkit;
 using System;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
 
-public class ConfirmSizeOfWoodSurface : MonoBehaviour
+public class MetalContentHandler : MonoBehaviour
 {
     private GameObject confirmButton;
     public GameObject currentTimeButton;

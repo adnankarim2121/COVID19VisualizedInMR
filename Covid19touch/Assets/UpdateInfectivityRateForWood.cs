@@ -9,6 +9,7 @@ using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit;
 using System;
+using UnityEngine.SceneManagement;
 
 public class UpdateInfectivityRateForWood : MonoBehaviour
 {
@@ -24,53 +25,48 @@ public class UpdateInfectivityRateForWood : MonoBehaviour
     private bool tempUpdated = false;
     UnityEngine.TouchScreenKeyboard keyboard;
     public static string keyboardText = "";
+    public HandleColorChange survivalRateInformation;
 
     // Start is called before the first frame update
     void Start()
     {
-        //GetComponent<TextMesh>().text = "Adnan";
-        textForWood = GameObject.Find("InfoForWood");
+        //Scene s = SceneManager.GetSceneByName("2-WoodIImageTargets");
+        //GameObject[] gameObjects = s.GetRootGameObjects();
+        textForWood = GameObject.Find("WoodVuforiaContent").transform.Find("ImageTarget_Wood").gameObject.transform.Find("InfoForWood").gameObject;
 
         description = textForWood.gameObject.transform.GetChild(1).gameObject;
         textMeshPro = description.GetComponent<TextMeshPro>();
-        textMeshPro.SetText("Change temperature and humidity value to calculate infectivity rate");
+        double infectivityRateWood = formulaForInfectivityRate(survivalRateInformation.woodTemp, survivalRateInformation.woodRH);
+        textMeshPro.SetText("The infectivity rate for wood is: ");
+        //textMeshPro.ForceMeshUpdate(true);
 
-        tempButton = textForWood.gameObject.transform.GetChild(2).gameObject.transform.GetChild(1).gameObject;
-   
-        var tempButtonToChange = tempButton.GetComponent<Interactable>();
-        tempButtonToChange.OnClick.AddListener(() => formulaForInfectivityRate(1.1,2.2));
+        
+        //GetComponent<TextMesh>().text = "Adnan";
 
-        //slider for temperature input
-        sliderForTemp = GameObject.Find("WoodTempSlider");
-        sliderForTemp.GetComponent<PinchSlider>().OnValueUpdated.AddListener((SliderValueTemp) => formulaForInfectivityRate(SliderValueTemp, humidVal));
 
-        //slider for humid input
-        sliderForHumid = GameObject.Find("WoodHumidSlider");
-        sliderForHumid.GetComponent<PinchSlider>().OnValueUpdated.AddListener((SliderValueTemp) => formulaForInfectivityRate(tempVal, SliderValueTemp));
-        //textForWood.GetComponent<TextMesh>.textForWood = "Adnan";
+        //var tempButtonToChange = tempButton.GetComponent<Interactable>();
+        //tempButtonToChange.OnClick.AddListener(() => formulaForInfectivityRate(1.1,2.2));
+
+        ////slider for temperature input
+        //sliderForTemp = GameObject.Find("WoodTempSlider");
+        //sliderForTemp.GetComponent<PinchSlider>().OnValueUpdated.AddListener((SliderValueTemp) => formulaForInfectivityRate(SliderValueTemp, humidVal));
+
+        ////slider for humid input
+        //sliderForHumid = GameObject.Find("WoodHumidSlider");
+        //sliderForHumid.GetComponent<PinchSlider>().OnValueUpdated.AddListener((SliderValueTemp) => formulaForInfectivityRate(tempVal, SliderValueTemp));
+        ////textForWood.GetComponent<TextMesh>.textForWood = "Adnan";
     }
 
 
-    private void formulaForInfectivityRate(double temp, SliderEventData humidity)
+    private double formulaForInfectivityRate(int temp, int humidity)
     {
         double uv = 2;
-        humidVal = humidity.NewValue * 100;
+        humidVal = humidity;
         double answer = 0.16030 + 0.04018 * ((tempVal - 20.615) / 10.585) + 0.02176 * ((humidVal - 45.235))
             + 0.14369 * ((uv - 0.95) / 0.95) + 0.02636 * ((tempVal - 20.615) / 10.585) * ((uv - 0.95) / 0.95);
-        textMeshPro.SetText(answer.ToString());
-        var sliderText = GameObject.Find("CurrentValueHumid").GetComponent<TextMesh>();
-        sliderText.text = humidVal.ToString();
+        return answer;
     }
-    private void formulaForInfectivityRate(SliderEventData temp, double humidity)
-    {
-        double uv = 2;
-        tempVal = temp.NewValue * 100;
-        double answer = 0.16030 + 0.04018 * ((tempVal - 20.615) / 10.585) + 0.02176 * ((humidity - 45.235))
-            + 0.14369 * ((uv - 0.95) / 0.95) + 0.02636 * ((tempVal - 20.615) / 10.585) * ((uv - 0.95) / 0.95);
-        textMeshPro.SetText(answer.ToString());
-        var sliderText = GameObject.Find("CurrentValueTemp").GetComponent<TextMesh>();
-        sliderText.text = tempVal.ToString();
-    }
+
 
 
 
@@ -78,33 +74,6 @@ public class UpdateInfectivityRateForWood : MonoBehaviour
     void Update()
     {
 
-        //get keyboard text components
-        if (TouchScreenKeyboard.visible == false && keyboard != null)
-        {
-            if (keyboard.status == TouchScreenKeyboard.Status.Done)
-            {
-                keyboardText = keyboard.text;
-                textMeshPro.SetText(keyboardText);
-                keyboard = null;
-            }
-        }
     }
 
-
-    public static void AddOnClick(Interactable interactable)
-    {
-        interactable.OnClick.AddListener(() => Debug.Log("sdsdsd"));
-    }
-    void invokeKeyboard()
-    {
-        keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, false, false);
-    }
-
-    void formulaForInfectivityRate(double temp, double humidity)
-    {
-        double uv = 2;
-        double answer = 0.16030 + 0.04018*((temp - 20.615)/10.585) + 0.02176*((humidity - 45.235))
-            + 0.14369 * ((uv - 0.95)/ 0.95) + 0.02636*((temp - 20.615)/ 10.585)*((uv - 0.95)/ 0.95);
-        textMeshPro.SetText(answer.ToString());
-    }
 }

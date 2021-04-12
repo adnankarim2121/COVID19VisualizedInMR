@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class HandleColorChange : MonoBehaviour
 {
+    public int woodTemp = 25;
+    public int woodRH = 35;
     // Start is called before the first frame update
     void Start()
     {

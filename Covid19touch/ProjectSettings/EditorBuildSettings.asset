@@ -26,6 +26,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SampleResources/Scenes/WoodTempAndHumidSelector.unity
     guid: 348c2e5d8ae10b54f914b9531a4f2b6e
+  - enabled: 1
+    path: Assets/SampleResources/Scenes/2-PlasticImageTargets.unity
+    guid: 40f5b08772efca94fac35187c3e19e97
+  - enabled: 1
+    path: Assets/SampleResources/Scenes/2-SteelImageTargets.unity
+    guid: 65180c9ae007c07459ecf25a65111413
+  - enabled: 1
+    path: Assets/SampleResources/Scenes/MetalTempAndHumidSelector.unity
+    guid: 8992913b4076f6a4db50c9e095f67331
+  - enabled: 1
+    path: Assets/SampleResources/Scenes/PlasticlTempAndHumidSelector.unity
+    guid: 5eb087914fc08fb45809f10abb2d3071
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: ccfcc1c19beeb3e40b6ffecd226da296,
       type: 2}

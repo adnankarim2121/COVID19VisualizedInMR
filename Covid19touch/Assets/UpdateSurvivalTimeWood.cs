@@ -8,6 +8,7 @@ using Microsoft.MixedReality.Toolkit.Utilities;
 using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit;
+using UnityEngine.SceneManagement;
 using System;
 
 
@@ -25,6 +26,7 @@ public class UpdateSurvivalTimeWood : MonoBehaviour
     public bool updateEveryFrame = true;
     private bool contentRendered = false;
     public ConfirmSizeOfWoodSurface sizeScriptWood;
+    public HandleColorChange survivalRateInformation;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,7 @@ public class UpdateSurvivalTimeWood : MonoBehaviour
         survivalInfoWood = GameObject.Find("SurvivalInfoWood");
         description = survivalInfoWood.gameObject.transform.GetChild(1).gameObject;
         textMeshPro = description.GetComponent<TextMeshPro>();
+        textMeshPro.SetText(survivalRateInformation.calculateSurvivalRateWood().ToString());
         //fast forward button
         fastForwardButton = survivalInfoWood.gameObject.transform.GetChild(2).gameObject.transform.GetChild(1).gameObject;
         var fastForwardChange = fastForwardButton.GetComponent<Interactable>();
@@ -54,13 +57,9 @@ public class UpdateSurvivalTimeWood : MonoBehaviour
             //survivalInfoWood.SetActive(true);
             //ensure button is clicked only once
             sizeScriptWood.confirmWoodSurfaceSize = false;
-        }
-        if (updateEveryFrame)
-        {
-            
-           
-            textMeshPro.SetText(DateTime.Now.ToString());
-        }
+        } 
+        textMeshPro.SetText(DateTime.Now.ToString());
+        
     }
 
     void changeColour()
